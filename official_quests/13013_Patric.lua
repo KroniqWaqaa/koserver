@@ -36,7 +36,6 @@ end
 
 if EVENT == 175 then
    SelectMsg(UID, 2, 101, 175, NPC,  25, 176, 13, 177);
-end   
 
 if EVENT == 9205 then
    SelectMsg(UID, 2, 886, 175, NPC,  25, 9206, 13, 168);
