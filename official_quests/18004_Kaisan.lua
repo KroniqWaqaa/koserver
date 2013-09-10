@@ -58,19 +58,11 @@ local savenum = 407;
 
 if EVENT == 407 then
    SaveEvent(UID, 4070);
-   SelectMsg(UID, 2, savenum, 4070, NPC, 4070, 408, 10, 101);
+   SelectMsg(UID, 2, savenum, 4070, NPC, 4070, 408);
 end
 
 if EVENT == 408 then
-   SelectMsg(UID, 2, savenum, 4070, NPC, 4189, 409, 4190, 410, 10, 101);
-end
-
-if EVENT == 409 then
-   ResetSkillPoints(UID)
-end
-
-if EVENT == 410 then
-   ResetStatPoints(UID)
+   SendStatSkillDistribute(UID)
 end
 
 local savenum = 453;
