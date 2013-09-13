@@ -19,8 +19,6 @@ if EVENT == 168 then
    Ret = 1;
 end
 
-local NATION = 0;
-
 if EVENT == 170 then
    SelectMsg(UID, 1, 101, 170, NPC, 24, 171);
 end
@@ -171,7 +169,7 @@ local MonsterCount = 0;
 
 if EVENT == 235 then
    MonsterCount  = CountMonsterQuestSub(UID, 103, 1);
-   if  MonsterCount < 5 then
+   if MonsterCount < 5 then
       SelectMsg(UID, 2, 103, 237, NPC, 18, 239);
    else
       SelectMsg(UID, 4, 103, 236, NPC, 10, 238, 27, 168);
